@@ -26,3 +26,9 @@ New versions must be built, tested, signed and published by the maintainer. Auto
 - Do not put credentials, user profiles or private signing keys in this repository or its release assets.
 
 Free hosting uses GitHub Releases, with no paid workflow or server required. [GitHub's release documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) describes the release asset limits.
+
+## Android
+
+[Veyra Mobile 1.2.0 for Android](https://github.com/ImpressionsDirect360/veyra-updates/releases/tag/android-v1.2.0) has the same branding and supported Weave protections. Its separate signed mobile feed is `https://raw.githubusercontent.com/ImpressionsDirect360/veyra-updates/main/android-release.json`. Android releases must be published with `--latest=false` so the Windows latest-release feed is unchanged.
+
+On the phone, open Menu → About Veyra → Allow Veyra updates in Android to review the system installation-source permission. Checks and Wi-Fi downloads are automatic; installation follows Android policy and may require approval. New APKs must retain the original signing certificate and use a higher versionCode. Keep System WebView updated separately through the phone app store.
